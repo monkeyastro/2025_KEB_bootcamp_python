@@ -24,8 +24,7 @@ def my_pow(b, e) -> float:
     if f > 0:
         result = result * math.exp(f * math.log(b))
 
-    return int(result)
-
+    return round(result, 2)
 
 print(my_pow(10, -2))
 print(my_pow(2, 9))
